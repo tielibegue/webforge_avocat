@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SARL Coco Avocats | Cabinets d'avocats à Abidjan</title>
+  <meta name="description" content="SARL Coco Avocats — Cabinets d'avocats à Abidjan. Expertise juridique en droit des affaires, droit immobilier et contentieux commercial. Conseil juridique professionnel.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SARL Coco Avocats | Cabinets d'avocats à Abidjan">
+  <meta property="og:description" content="Expertise juridique en droit des affaires, droit immobilier et contentieux commercial à Abidjan.">
+  <meta property="og:image" content="/images/og-image.jpg">
+  <meta property="og:url" content="https://cocoa-avocats.ci/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SARL Coco Avocats — Avocats à Abidjan">
+  <meta name="twitter:description" content="Expertise juridique en droit des affaires, immobilier et contentieux commercial.">
+  <meta name="twitter:image" content="/images/og-image.jpg">
+
+  <link rel="canonical" href="https://cocoa-avocats.ci/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <style>
+    :root {
+      /* Palette SARL Coco Avocats — PRIVE DU BRIEF */
+      --primary:       #1E40AF;
+      --primary-dark:  #172554;
+      --primary-light: #3B82F6;
+      --secondary:     #F59E0B;
+      --secondary-dark:#B45309;
+      --neutral-50:    #F8FAFC;
+      --neutral-100:   #F1F5F9;
+      --neutral-200:   #E2E8F0;
+      --neutral-300:   #CBD5E1;
+      --neutral-400:   #94A3B8;
+      --neutral-500:   #64748B;
+      --neutral-600:   #475569;
+      --neutral-700:   #334155;
+      --neutral-800:   #1E293B;
+      --neutral-900:   #0F172A;
+      --white:         #FFFFFF;
+      --black:         #000000;
+
+      /* Semantic */
+      --success: #10B981;
+      --warning: #F59E0B;
+      --danger:  #EF4444;
+      --info:    #3B82F6;
+
+      /* Typography */
+      --font-head: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+
+      /* Spacing */
+      --space-1:  0.25rem;
+      --space-2:  0.5rem;
+      --space-3:  0.75rem;
+      --space-4:  1rem;
+      --space-5:  1.25rem;
+      --space-6:  1.5rem;
+      --space-8:  2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+
+      /* Border radius */
+      --radius-sm:  0.25rem;
+      --radius-md:  0.5rem;
+      --radius-lg:  0.75rem;
+      --radius-xl:  1rem;
+      --radius-full: 9999px;
+
+      /* Shadows */
+      --shadow-sm:  0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md:  0 4px 6px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05);
+      --shadow-lg:  0 10px 15px rgba(0,0,0,0.07), 0 4px 6px rgba(0,0,0,0.05);
+      --shadow-xl:  0 20px 25px rgba(0,0,0,0.08), 0 8px 10px rgba(0,0,0,0.04);
+
+      /* Transitions */
+      --transition: 0.2s ease;
+
+      /* Layout */
+      --max-width: 1200px;
+      --header-height: 72px;
+    }
+
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--neutral-800);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Skip link */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: var(--space-4);
+      background: var(--neutral-900);
+      color: var(--white);
+      padding: var(--space-2) var(--space-4);
+      border-radius: var(--radius-sm);
+      z-index: 10000;
+      text-decoration: none;
+      font-weight: 500;
+      transition: top var(--transition);
+    }
+    .skip-link:focus { top: var(--space-4); }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-head);
+      color: var(--neutral-900);
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    h1 { font-size: clamp(2rem, 5vw, 2.8rem); }
+    h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.125rem; }
+
+    p { color: var(--neutral-600); line-height: 1.7; }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+    a:hover { color: var(--primary-dark); }
+
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin-inline: auto;
+      padding-inline: var(--space-6);
+    }
+
+    /* Button */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2);
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      font-size: 0.875rem;
+      font-family: var(--font-body);
+      cursor: pointer;
+      border: none;
+      transition: all var(--transition);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn:focus-visible {
+      outline: 3px solid var(--neutral-300);
+      outline-offset: 2px;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      color: var(--white);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+    .btn-secondary:hover {
+      background: var(--primary);
+      color: var(--white);
+      transform: translateY(-1px);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--neutral-700);
+    }
+    .btn-ghost:hover {
+      background: var(--neutral-100);
+      color: var(--neutral-900);
+    }
+
+    /* Card */
+    .card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      border: 1px solid var(--neutral-200);
+    }
+    .card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--neutral-300);
+    }
+    .card-body { padding: var(--space-6); }
+
+    /* Section */
+    .section {
+      padding-block: var(--space-16);
+    }
+    .section-alt {
+      background: var(--neutral-50);
+    }
+    .section-header {
+      text-align: center;
+      max-width: 640px;
+      margin-inline: auto;
+      margin-bottom: var(--space-12);
+    }
+    .section-header p {
+      margin-top: var(--space-4);
+    }
+    .section-badge {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--white);
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--space-4);
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      gap: var(--space-6);
+    }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+    /* Flex */
+    .flex { display: flex; }
+    .flex-col { flex-direction: column; }
+    .flex-between { justify-content: space-between; align-items: center; }
+    .flex-center { justify-content: center; align-items: center; }
+    .flex-wrap { flex-wrap: wrap; }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: var(--neutral-200);
+      margin-block: var(--space-8);
+    }
+
+    /* ===== HEADER / NAV ===== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      border-bottom: 1px solid var(--neutral-200);
+      height: var(--header-height);
+    }
+    .site-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      font-family: var(--font-head);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--neutral-900);
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.25rem;
+    }
+    .main-nav ul {
+      display: flex;
+      gap: var(--space-6);
+      list-style: none;
+      align-items: center;
+    }
+    .main-nav a {
+      color: var(--neutral-700);
+      font-size: 0.9375rem;
+      font-weight: 500;
+      transition: color var(--transition);
+      position: relative;
+    }
+    .main-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--primary);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform var(--transition);
+    }
+    .main-nav a:hover { color: var(--primary); }
+    .main-nav a:hover::after,
+    .main-nav a.active::after { transform: scaleX(1); transform-origin: left; }
+
+    .nav-cta {
+      margin-left: var(--space-2);
+    }
+
+    /* Mobile menu toggle */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: var(--space-2);
+      color: var(--neutral-700);
+    }
+    .nav-toggle svg { width: 24px; height: 24px; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: var(--white);
+      padding-block: var(--space-20) var(--space-16);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(245,158,11,0.15) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero .container {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: var(--radius-full);
+      padding: var(--space-2) var(--space-4);
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: var(--space-6);
+    }
+    .hero h1 {
+      color: var(--white);
+      max-width: 800px;
+      line-height: 1.15;
+    }
+    .hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: rgba(255,255,255,0.8);
+      max-width: 560px;
+      margin-top: var(--space-4);
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex;
+      gap: var(--space-4);
+      margin-top: var(--space-8);
+      flex-wrap: wrap;
+    }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+      margin-top: var(--space-12);
+      padding-block: var(--space-8);
+      background: rgba(0,0,0,0.2);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .hero-stat {
+      text-align: center;
+    }
+    .hero-stat-value {
+      font-family: var(--font-head);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--secondary);
+      display: block;
+    }
+    .hero-stat-label {
+      font-size: 0.8125rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: var(--space-1);
+    }
+
+    /* ===== SERVICES ===== */
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--neutral-200);
+      border-radius: var(--radius-lg);
+      padding: var(--space-8);
+      transition: all var(--transition);
+    }
+    .service-card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: rgba(30,64,175,0.08);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--space-5);
+      color: var(--primary);
+    }
+    .service-icon svg { width: 24px; height: 24px; }
+    .service-card h3 { color: var(--neutral-900); margin-bottom: var(--space-3); }
+    .service-card p { color: var(--neutral-500); font-size: 0.9375rem; line-height: 1.7; }
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.875rem;
+      margin-top: var(--space-4);
+      transition: gap var(--transition);
+    }
+    .service-link:hover { gap: var(--space-3); }
+
+    /* ===== ABOUT ===== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-12);
+      align-items: center;
+    }
+    .about-image {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      background: var(--neutral-100);
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--neutral-400);
+    }
+    .about-text h2 { margin-bottom: var(--space-5); }
+    .about-text .lead {
+      font-size: 1.125rem;
+      color: var(--neutral-700);
+      line-height: 1.8;
+      margin-bottom: var(--space-6);
+    }
+    .about-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .about-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      color: var(--neutral-600);
+    }
+    .about-list-icon {
+      width: 20px;
+      height: 20px;
+      background: var(--primary);
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .about-list-icon svg { width: 10px; height: 10px; color: var(--white); }
+
+    /* ===== CONTACT FORM ===== */
+    .contact-section {
+      background: var(--neutral-50);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-12);
+    }
+    .contact-info h2 { margin-bottom: var(--space-5); }
+    .contact-info-text {
+      color: var(--neutral-500);
+      font-size: 1rem;
+      margin-bottom: var(--space-6);
+    }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-4);
+      margin-bottom: var(--space-5);
+    }
+    .contact-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+    .contact-icon svg { width: 20px; height: 20px; }
+    .contact-item-label {
+      font-size: 0.8125rem;
+      color: var(--neutral-400);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--space-1);
+    }
+    .contact-item-value {
+      color: var(--neutral-800);
+      font-weight: 500;
+    }
+    .contact-item-value a {
+      color: var(--primary);
+      font-weight: 500;
+    }
+    .contact-item-value a:hover { color: var(--primary-dark); }
+
+    .form-card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      padding: var(--space-8);
+      box-shadow: var(--shadow-md);
+    }
+    .form-card h3 { margin-bottom: var(--space-5); }
+    .form-group {
+      margin-bottom: var(--space-5);
+    }
+    .form-label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--neutral-700);
+      margin-bottom: var(--space-2);
+    }
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1.5px solid var(--neutral-200);
+      border-radius: var(--radius-md);
+      font-family: var(--font-body);
+      font-size: 0.9375rem;
+      color: var(--neutral-800);
+      background: var(--white);
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(30,64,175,0.1);
+    }
+    .form-textarea { resize: vertical; min-height: 120px; }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+    }
+    .form-submit {
+      width: 100%;
+      margin-top: var(--space-2);
+    }
+    .form-note {
+      text-align: center;
+      font-size: 0.8125rem;
+      color: var(--neutral-400);
+      margin-top: var(--space-3);
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: var(--neutral-900);
+      color: var(--neutral-400);
+      padding-block: var(--space-12);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: var(--space-8);
+      margin-bottom: var(--space-10);
+    }
+    .footer-brand p {
+      margin-top: var(--space-4);
+      font-size: 0.9375rem;
+    }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      font-family: var(--font-head);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .footer-col h4 {
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--space-4);
+    }
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .footer-col a {
+      color: var(--neutral-400);
+      font-size: 0.9375rem;
+      transition: color var(--transition);
+    }
+    .footer-col a:hover { color: var(--white); }
+    .footer-bottom {
+      border-top: 1px solid var(--neutral-800);
+      padding-block: var(--space-6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      font-size: 0.8125rem;
+    }
+    .footer-legal-links {
+      display: flex;
+      gap: var(--space-4);
+      list-style: none;
+    }
+
+    /* ===== LEGAL PAGES ===== */
+    .legal-page {
+      max-width: 720px;
+      margin-inline: auto;
+      padding-block: var(--space-12);
+    }
+    .legal-section {
+      margin-bottom: var(--space-8);
+      padding-bottom: var(--space-8);
+      border-bottom: 1px solid var(--neutral-200);
+    }
+    .legal-section:last-child { border-bottom: none; }
+    .legal-section h2 {
+      font-family: var(--font-body);
+      font-size: 1.25rem;
+      color: var(--neutral-900);
+      margin-bottom: var(--space-4);
+      padding-bottom: var(--space-2);
+      border-bottom: 1px solid var(--neutral-100);
+    }
+    .legal-section p,
+    .legal-section li {
+      font-size: 0.9375rem;
+      color: var(--neutral-600);
+      line-height: 1.75;
+    }
+    .legal-section ul {
+      padding-inline-start: var(--space-6);
+      margin-top: var(--space-3);
+    }
+    .legal-section li { margin-bottom: var(--space-2); }
+    .legal-meta {
+      font-size: 0.8125rem;
+      color: var(--neutral-400);
+      margin-top: var(--space-6);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--neutral-200);
+    }
+
+    /* ===== COOKIE BANNER ===== */
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--neutral-900);
+      color: var(--neutral-300);
+      padding: var(--space-4) var(--space-6);
+      z-index: 10001;
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .cookie-banner p {
+      font-size: 0.875rem;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+    .cookie-banner a { color: var(--secondary); }
+    .cookie-actions { display: flex; gap: var(--space-2); }
+
+    /* ===== WHATSAPP FLOAT ===== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: var(--space-6);
+      right: var(--space-6);
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: var(--shadow-xl);
+      z-index: 9999;
+      transition: transform var(--transition);
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1) translateY(-2px);
+    }
+    .whatsapp-float svg { width: 28px; height: 28px; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .grid-3 { grid-template-columns: repeat(2, 1fr); }
+      .about-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      :root { --header-height: 64px; }
+
+      .main-nav { display: none; }
+      .nav-toggle { display: flex; }
+
+      .main-nav.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--neutral-200);
+        padding: var(--space-6) var(--space-4);
+        box-shadow: var(--shadow-lg);
+      }
+      .main-nav.open ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-4);
+      }
+      .main-nav.open a {
+        display: block;
+        padding: var(--space-2) 0;
+        font-size: 1rem;
+      }
+      .nav-cta { margin-left: 0; margin-top: var(--space-3); }
+
+      .grid-2, .grid-3, .grid-4 {
+        grid-template-columns: 1fr;
+      }
+      .hero-stats {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+      }
+      .hero { padding-block: var(--space-16) var(--space-12); }
+      .section { padding-block: var(--space-10); }
+      .container { padding-inline: var(--space-4); }
+      .form-row { grid-template-columns: 1fr; }
+
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+
+      .cookie-banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: var(--space-4) var(--space-4);
+      }
+      .cookie-actions { width: 100%; justify-content: center; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn { width: 100%; justify-content: center; }
+      .section-header { margin-bottom: var(--space-8); }
+    }
+
+    /* Focus visible (accessibilité) */
+    :focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 2px;
+    }
+
+    /* Selection */
+    ::selection {
+      background: var(--primary);
+      color: var(--white);
+    }
+  </style>
+
+  <!-- JSON-LD : Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LawFirm",
+    "name": "SARL Coco Avocats",
+    "url": "https://cocoa-avocats.ci/",
+    "logo": "https://cocoa-avocats.ci/logo.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Immeuble Treichville, 3e étage",
+      "addressLocality": "Abidjan",
+      "addressCountry": "CI"
+    },
+    "telephone": "+225 07 00 00 00 00",
+    "email": "contact@coco-avocats.ci",
+    "priceRange": "$$",
+    "founder": {
+      "@type": "Person",
+      "name": "Me Coco"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+    <div>
+      <h2 id="cookie-title" style="color: white; font-size: 1rem; margin: 0 0 var(--space-2); font-weight: 600;">Notre politique de cookies</h2>
+      <p id="cookie-desc">
+        Ce site utilise des cookies pour garantir le fonctionnement et mesurer l'audience.
+        En continuant à naviguer, vous acceptez leur utilisation.
+        <a href="/politique-confidentialite">En savoir plus</a>
+      </p>
+    </div>
+    <div class="cookie-actions">
+      <button onclick="document.getElementById('cookie-banner').style.display='none'; localStorage.setItem('cookie-consent','accepted');" style="background: var(--secondary); color: var(--neutral-900); border: none; padding: 0.5rem 1rem; border-radius: 999px; font-weight: 600; cursor: pointer; font-size: 0.875rem;">
+        Accepter
+      </button>
+      <button onclick="document.getElementById('cookie-banner').style.display='none'; localStorage.setItem('cookie-consent','rejected');" style="background: transparent; color: var(--neutral-300); border: 1px solid var(--neutral-700); padding: 0.5rem 1rem; border-radius: 999px; font-weight: 500; cursor: pointer; font-size: 0.875rem;">
+        Refuser
+      </button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo" aria-label="SARL Coco Avocats — Accueil">
+        <span class="logo-icon" aria-hidden="true">CA</span>
+        <span>SARL Coco Avocats</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="/" class="active">Accueil</a></li>
+          <li><a href="/a-propos">À propos</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir la navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-badge" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color: var(--secondary);">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/>
+          </svg>
+          Cabinet d'avocats — Abidjan
+        </div>
+        <h1 id="hero-title">Votre partenaire juridique de confiance à Abidjan</h1>
+        <p class="hero-subtitle">
+          Expertise avocats en droit des affaires, immobilier et contentieux commercial.
+          Nous vous accompagnons avec rigueur et réactivité dans tous vos dossiers juridiques.
+        </p>
+        <div class="hero-actions">
+          <a href="/contact" class="btn btn-primary" style="background: var(--secondary); color: var(--neutral-900);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H4z"/><path d="M4 16l3 3 7-7"/></svg>
+            Prendre rendez-vous
+          </a>
+          <a href="/services" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.3);">
+            Nos services
+          </a>
+        </div>
+        <div class="hero-stats" role="list" aria-label="Chiffres clés du cabinet">
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-value">15+</span>
+            <span class="hero-stat-label">Ans d'expérience</span>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-value">500+</span>
+            <span class="hero-stat-label">Dossiers traités</span>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-value">98%</span>
+            <span class="hero-stat-label">Clients satisfaits</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Nos expertises</span>
+          <h2 id="services-title">Des services juridiques adaptés à vos besoins</h2>
+          <p>
+            Nous couvrons l'ensemble des besoin juridiques des entreprises et des particuliers à Abidjan,
+            avec une approche sur mesure pour chaque dossier.
+          </p>
+        </div>
+        <div class="grid grid-3">
+          <article class="service-card" aria-labelledby="svr-1">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+                <path d="M14 2v6h6"/>
+                <path d="M9 13h6M9 17h6"/>
+              </svg>
+            </div>
+            <h3 id="svr-1">Droit des affaires</h3>
+            <p>Création d'entreprise, contrats commerciaux, fusion-acquisition, gouvernance d'entreprise et conseil juridique en droit des affaires.</p>
+            <a href="/services" class="service-link" aria-label="En savoir plus sur le droit des affaires">
+              En savoir plus
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+          <article class="service-card" aria-labelledby="svr-2">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
+                <path d="M9 22V12h6v10"/>
+              </svg>
+            </div>
+            <h3 id="svr-2">Droit immobilier</h3>
+            <p>Achats et ventes immobilières, baux commerciaux, litiges immobiliers, régularisation foncière et conseil en investissement immobilier.</p>
+            <a href="/services" class="service-link" aria-label="En savoir plus sur le droit immobilier">
+              En savoir plus
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+          <article class="service-card" aria-labelledby="svr-3">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
+              </svg>
+            </div>
+            <h3 id="svr-3">Contentieux commercial</h3>
+            <p>Représentation en justice pour litiges commerciaux, recouvrement de créances, différends de contrats, injonctions de paiement et arbitrage.</p>
+            <a href="/services" class="service-link" aria-label="En savoir plus sur le contentieux commercial">
+              En savoir plus
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section section-alt" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image" aria-label="Image d'illustration du cabinet d'avocats">
+            <!-- Placeholder — image client à télécharger -->
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="opacity: 0.4;">
+              <path d="M3 21h18M3 7v14M21 7v14M6 7V3h12v4M9 21v-6h6v6"/>
+            </svg>
+          </div>
+          <div class="about-text">
+            <span class="section-badge" style="margin: 0 auto var(--space-4);">Le cabinet</span>
+            <h2 id="about-title">Un cabinet d'avocats engagé au service de vos affaires</h2>
+            <p class="lead">
+              SARL Coco Avocats est un cabinet d'avocats inscrit au Barreau d'Abidjan-Cocody.
+              Notre équipe d'avocats expérimentés vous accompagne dans tous vos dossiers juridiques
+              avec la rigueur, la confidentialité et le professionnalisme que vous méritez.
+            </p>
+            <ul class="about-list">
+              <li>
+                <span class="about-list-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
+                </span>
+                <span><strong>Régie au Barreau d'Abidjan-Cocody</strong> — agrément complété, exercice conforme</span>
+              </li>
+              <li>
+                <span class="about-list-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
+                </span>
+                <span><strong>Confidentialité absolue</strong> — secret professionnel garanti sur chaque dossier</span>
+              </li>
+              <li>
+                <span class="about-list-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
+                </span>
+                <span><strong>Réactivité</strong> — réponse sous 24h sur toute demande d'urgence</span>
+              </li>
+              <li>
+                <span class="about-list-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
+                </span>
+                <span><strong>Tarifs transparents</strong> — devis préalable et honoraires clarifiés</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="section" style="background: var(--primary);" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="cta-title" style="color: var(--white);">Besoin d'un conseil juridique ?</h2>
+          <p style="color: rgba(255,255,255,0.75);">
+            Contactez-nous pour un premier échange gratuit. Nous étudions votre situation et vous proposons la meilleure solution.
+          </p>
+        </div>
+        <div class="flex flex-center" style="gap: var(--space-5); flex-wrap: wrap;">
+          <a href="/contact" class="btn" style="background: var(--secondary); color: var(--neutral-900); font-size: 1rem; padding: 1rem 2rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H4z"/><path d="M4 16l3 3 7-7"/></svg>
+            Contactez-nous maintenant
+          </a>
+          <a href="tel:+2250700000000" class="btn" style="background: transparent; color: white; border: 2px solid rgba(255,255,255,0.4); font-size: 1rem; padding: 1rem 2rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.13.81.37 1.59.74 2.29a2 2 0 0 1-.45 2.51 19.79 19.79 0 0 1-4.33 4.68A2 2 0 0 1 3 21h3a2 2 0 0 1 1.56-3.89c.24-.59.5-1.18.78-1.78a2 2 0 0 1 2.52 1.28l.64 1.84a19.79 19.79 0 0 0 6.32 3.07h.01c1.53 0 2.82-1.03 3.3-2.4l.29-1.2a2 2 0 0 1 2.27 1.95 19.79 19.79 0 0 0 7.08-4.46 2 2 0 0 1 1.23-.63h.01A2 2 0 0 1 22 16.92z"/></svg>
+            +225 07 00 00 00 00
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Contact</span>
+          <h2 id="contact-title">Prenez contact avec notre cabinet</h2>
+          <p>Nos équipes sont disponibles pour répondre à toutes vos questions et étudier vos besoins.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Nos coordonnées</h3>
+            <p class="contact-info-text">
+              Notre cabinet est situé au cœur d'Abidjan, facilement accessible.
+              Nous vous accueillons du lundi au vendredi, de 8h à 17h30.
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Adresse</div>
+                <div class="contact-item-value">Immeuble Treichville, 3e étage<br>Abidjan, Côte d'Ivoire</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.13.81.37 1.59.74 2.29a2 2 0 0 1-.45 2.51 19.79 19.79 0 0 1-4.33 4.68A2 2 0 0 1 3 21h3a2 2 0 0 1 1.56-3.89c.24-.59.5-1.18.78-1.78a2 2 0 0 1 2.52 1.28l.64 1.84a19.79 19.79 0 0 0 6.32 3.07h.01c1.53 0 2.82-1.03 3.3-2.4l.29-1.2a2 2 0 0 1 2.27 1.95 19.79 19.79 0 0 0 7.08-4.46 2 2 0 0 1 1.23-.63h.01A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Téléphone</div>
+                <div class="contact-item-value">
+                  <a href="tel:+2250700000000">+225 07 00 00 00 00</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H4z"/><path d="M4 16l3 3 7-7"/></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-value">
+                  <a href="mailto:contact@coco-avocats.ci">contact@coco-avocats.ci</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Horaires</div>
+                <div class="contact-item-value">Lundi – Vendredi : 8h00 – 17h30<br>Samedi : sur rendez-vous</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h3 id="contact-form-title">Envoyez-nous un message</h3>
+            <form action="/api/contact" method="POST" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="field-lastname">Nom de famille *</label>
+                  <input class="form-input" id="field-lastname" name="lastname" type="text" required autocomplete="family-name" placeholder="Diallo" aria-required="true">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="field-firstname">Prénom(s) *</label>
+                  <input class="form-input" id="field-firstname" name="firstname" type="text" required autocomplete="given-name" placeholder="Jean" aria-required="true">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="field-email">Email *</label>
+                <input class="form-input" id="field-email" name="email" type="email" required autocomplete="email" placeholder="jean.diallo@entreprise.ci" aria-required="true">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="field-phone">Téléphone</label>
+                <input class="form-input" id="field-phone" name="phone" type="tel" autocomplete="tel" placeholder="+225 07 00 00 00 00">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="field-subject">Sujet *</label>
+                <select class="form-select" id="field-subject" name="subject" required aria-required="true">
+                  <option value="" disabled selected>Choisissez un sujet</option>
+                  <option value="creation-entreprise">Création d'entreprise</option>
+                  <option value="contrat-commercial">Contrat commercial</option>
+                  <option value="droit-immobilier">Droit immobilier</option>
+                  <option value="contentieux">Contentieux</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="field-message">Votre message *</label>
+                <textarea class="form-textarea" id="field-message" name="message" required placeholder="Décrivez votre situation ou votre besoin..." aria-required="true"></textarea>
+              </div>
+              <label class="form-checkbox" style="display: flex; align-items: center; gap: var(--space-2); font-size: 0.875rem; margin-bottom: var(--space-5); cursor: pointer;">
+                <input type="checkbox" name="consent" required style="width: 16px; height: 16px; accent-color: var(--primary); cursor: pointer;" aria-required="true">
+                <span style="color: var(--neutral-500);">J'accepte la <a href="/politique-confidentialite" style="color: var(--primary);">politique de confidentialité</a>. *</span>
+              </label>
+              <button type="submit" class="btn btn-primary form-submit">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H4z"/><path d="M4 16l3 3 7-7"/></svg>
+                Envoyer le message
+              </button>
+              <p class="form-note">
+                Nous répondons sous 24 heures ouvrées. Vos données sont protégées conformément à la loi ivoirienne n° 2013-450.
+              </p>
+            </form>
+            <style>
+              .form-checkbox input {
+                accent-color: var(--primary);
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <span class="logo-icon" aria-hidden="true" style="width: 36px; height: 36px; background: var(--secondary); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--neutral-900); font-size: 1rem;">CA</span>
+            <span>SARL Coco Avocats</span>
+          </a>
+          <p>
+            Cabinet d'avocats au Barreau d'Abidjan-Cocody. Expertise juridique en droit des affaires, immobilier et contentieux commercial.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Nos services</h4>
+          <ul>
+            <li><a href="/services#affaires">Droit des affaires</a></li>
+            <li><a href="/services#immobilier">Droit immobilier</a></li>
+            <li><a href="/services#contentieux">Contentieux commercial</a></li>
+            <li><a href="/contact">Consultation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Le cabinet</h4>
+          <ul>
+            <li><a href="/a-propos">À propos</a></li>
+            <li><a href="/a-propos#equipe">L'équipe</a></li>
+            <li><a href="/a-propos#engagements">Nos engagements</a></li>
+            <li><a href="/blog">Blog juridique</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4> Juridique</h4>
+          <ul>
+            <li><a href="/mentions-legales">Mentions légales</a></li>
+            <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SARL Coco Avocats — Tous droits réservés</p>
+        <ul class="footer-legal-links">
+          <li><a href="/mentions-legales" style="color: var(--neutral-500);">Mentions légales</a></li>
+          <li><a href="/politique-confidentialite" style="color: var(--neutral-500);">Confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/2250700000000?text=Bonjour,%20je%20souhaite%20prendre%20rendez-vous%20avec%20SARL%20Coco%20Avocats." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contacter sur WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.47 7.87a2.39 2.39 0 0 1 2.57 1.22l.23.05a2.4 2.4 0 0 1 .36 2.71l-.89 4.02a.62.62 0 0 1-.78.32l-3.5-2.13a.71.71 0 0 1-.22-.41v-2.2a2.4 2.4 0 0 1 2.27-2.43c.98-.24 2.44.24 2.74 1.16l.56 1.57-3.93 2.35a.58.58 0 0 1-.7.07l-4.49-2.97a2.39 2.39 0 0 1-1.14-1.1c-.25-.35-.43-.75-.52-1.18a1.5 1.5 0 0 1 1.48-1.75c.68-.21 1.4-.07 1.89.33l3.35 3.35a2.4 2.4 0 0 1 1.16 2.74l-.05.24a.62.62 0 0 1-.4.57l.04.24a2.4 2.4 0 0 1-1.22 2.57l-.01.01a2.4 2.4 0 0 1-2.43 2.27l-.24-.05a2.39 2.39 0 0 1-2.71.36l-4.02-.89a.62.62 0 0 1-.32-.78l2.13-3.5a.71.71 0 0 1.41-.22l2.2 3.5a2.4 2.4 0 0 1 2.43 2.27c.24.98-.24 2.44-1.16 2.74l-1.57.56-2.35-3.93a.58.58 0 0 1-.07-.7l2.97-4.49c.35-.25.75-.43 1.18-.52a1.5 1.5 0 0 1 1.75 1.48c.21.68.07 1.4-.33 1.89l-3.35 3.35a2.4 2.4 0 0 1-2.74 1.16l-.24-.05a.62.62 0 0 1-.57-.4l-.24.04a2.4 2.4 0 0 1-2.57-1.22l-.01-.01a2.4 2.4 0 0 1-2.27-2.43c-.98-.24-2.44.24-2.74 1.16l-.56 1.57 3.93 2.35a.58.58 0 0 1-.07.7l-2.97 4.49a1.5 1.5 0 0 1-1.48 1.75c-.68.21-1.4.07-1.89-.33l-3.35-3.35a2.4 2.4 0 0 1-1.16-2.74l.05-.24a.62.62 0 0 1.4-.57l.24.04a2.4 2.4 0 0 1 2.57-1.22zM12 21.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9z"/>
+    </svg>
+  </a>
+
+  <!-- Navigation Mobile Toggle Script -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    navToggle.addEventListener('click', () => {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!isExpanded));
+      mainNav.classList.toggle('open', !isExpanded);
+    });
+    // Fermer le menu quand on clique sur un lien
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>

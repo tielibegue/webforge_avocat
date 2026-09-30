@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog juridique | SARL Coco Avocats — Cabinet d'avocats à Abidjan</title>
+  <meta name="description" content="SARL Coco Avocats — Blog juridique : actualités, conseils et analyses en droit des affaires, immobilier et contentieux commercial à Abidjan.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Blog juridique | SARL Coco Avocats">
+  <meta property="og:description" content="Actualités, conseils et analyses en droit des affaires, immobilier et contentieux commercial à Abidjan.">
+  <meta property="og:image" content="/images/og-image.jpg">
+  <meta property="og:url" content="https://cocoa-avocats.ci/blog">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SARL Coco Avocats — Blog juridique">
+  <meta name="twitter:description" content="Actualités, conseils et analyses juridiques à Abidjan.">
+  <link rel="canonical" href="https://cocoa-avocats.ci/blog">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    :root{
+      --primary:#1E40AF; --primary-dark:#172554; --secondary:#F59E0B;
+      --neutral-50:#F8FAFC; --neutral-100:#F1F5F9; --neutral-200:#E2E8F0; --neutral-300:#CBD5E1;
+      --neutral-400:#94A3B8; --neutral-500:#64748B; --neutral-600:#475569; --neutral-700:#334155;
+      --neutral-800:#1E293B; --neutral-900:#0F172A; --white:#FFFFFF;
+      --font-head:'Playfair Display',Georgia,serif; --font-body:'Inter',system-ui,sans-serif;
+      --space-1:.25rem; --space-2:.5rem; --space-3:.75rem; --space-4:1rem; --space-5:1.25rem;
+      --space-6:1.5rem; --space-8:2rem; --space-10:2.5rem; --space-12:3rem; --space-16:4rem;
+      --radius-sm:.25rem; --radius-md:.5rem; --radius-lg:.75rem; --radius-xl:1rem;
+      --shadow-sm:0 1px 2px rgba(0,0,0,.05);
+      --shadow-md:0 4px 6px rgba(0,0,0,.07),0 1px 3px rgba(0,0,0,.05);
+      --shadow-lg:0 10px 15px rgba(0,0,0,.07),0 4px 6px rgba(0,0,0,.05);
+      --max-width:1200px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font-body);color:var(--neutral-800);background:var(--white);line-height:1.7}
+    .skip-link{position:absolute;top:-100%;left:var(--space-4);background:var(--neutral-900);color:var(--white);padding:var(--space-2) var(--space-4);border-radius:var(--radius-sm);z-index:10000;text-decoration:none;font-weight:500}
+    .skip-link:focus{top:var(--space-4)}
+    h1,h2,h3,h4{font-family:var(--font-head);color:var(--neutral-900);line-height:1.2;font-weight:600}
+    h1{font-size:clamp(2rem,5vw,2.5rem)}
+    h2{font-size:clamp(1.5rem,4vw,2rem)}
+    h3{font-size:1.5rem}
+    p{color:var(--neutral-600);line-height:1.8}
+    a{color:var(--primary);text-decoration:none}
+    a:hover{color:var(--primary-dark)}
+    .container{width:100%;max-width:var(--max-width);margin-inline:auto;padding-inline:var(--space-6)}
+    .section{padding-block:var(--space-16)}
+    .section-alt{background:var(--neutral-50)}
+    .section-header{text-align:center;max-width:680px;margin-inline:auto;margin-bottom:var(--space-12)}
+    .section-header p{margin-top:var(--space-4)}
+    .section-badge{display:inline-block;background:var(--primary);color:var(--white);padding:var(--space-1) var(--space-3);border-radius:999px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:var(--space-4)}
+    .grid{display:grid;gap:var(--space-6)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .flex{display:flex}
+    .flex-between{justify-content:space-between;align-items:center}
+    .divider{height:1px;background:var(--neutral-200);margin-block:var(--space-8)}
+
+    .site-header{position:sticky;top:0;z-index:1000;background:var(--white);border-bottom:1px solid var(--neutral-200);height:72px}
+    .site-header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+    .logo{display:flex;align-items:center;gap:var(--space-3);font-family:var(--font-head);font-size:1.25rem;font-weight:700;color:var(--neutral-900);text-decoration:none;flex-shrink:0}
+    .logo-icon{width:40px;height:40px;background:var(--primary);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:var(--white);font-size:1.25rem}
+    .main-nav ul{display:flex;gap:var(--space-6);list-style:none;align-items:center}
+    .main-nav a{color:var(--neutral-700);font-size:.9375rem;font-weight:500;transition:color .2s;position:relative}
+    .main-nav a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:2px;background:var(--primary);transform:scaleX(0);transform-origin:right;transition:transform .2s}
+    .main-nav a:hover{color:var(--primary)}
+    .main-nav a:hover::after,.main-nav a.active::after{transform:scaleX(1);transform-origin:left}
+    .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:var(--space-2);color:var(--neutral-700)}
+    .nav-toggle svg{width:24px;height:24px}
+
+    .blog-card{background:var(--white);border:1px solid var(--neutral-200);border-radius:var(--radius-lg);overflow:hidden;transition:all .2s}
+    .blog-card:hover{box-shadow:var(--shadow-md);border-color:var(--primary)}
+    .blog-card-img{background:var(--neutral-100);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;color:var(--neutral-400);font-size:.875rem}
+    .blog-card-img svg{width:40px;height:40px;opacity:.5}
+    .blog-card-body{padding:var(--space-6) var(--space-6) var(--space-5)}
+    .blog-category{display:inline-block;background:var(--primary);color:var(--white);padding:.125rem .5rem;border-radius:999px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:var(--space-3)}
+    .blog-card h3{color:var(--neutral-900);font-size:1.125rem;line-height:1.3;margin-bottom:var(--space-3)}
+    .blog-card h3 a{color:inherit;text-decoration:none}
+    .blog-card h3 a:hover{color:var(--primary)}
+    .blog-excerpt{color:var(--neutral-500);font-size:.9375rem;line-height:1.6;margin-bottom:var(--space-4)}
+    .blog-meta{display:flex;gap:var(--space-4);align-items:center;font-size:.8125rem;color:var(--neutral-400);border-top:1px solid var(--neutral-100);padding-top:var(--space-3)}
+    .blog-author{display:flex;align-items:center;gap:var(--space-2)}
+    .blog-author-avatar{width:28px;height:28px;border-radius:50%;background:var(--secondary);display:flex;align-items:center;justify-content:center;color:var(--neutral-900);font-size:.75rem;font-weight:700;flex-shrink:0}
+    .blog-date{color:var(--neutral-400)}
+
+    .site-footer{background:var(--neutral-900);color:var(--neutral-400);padding-block:var(--space-12)}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:var(--space-8);margin-bottom:var(--space-10)}
+    .footer-brand p{margin-top:var(--space-4)}
+    .footer-logo{display:flex;align-items:center;gap:var(--space-3);font-family:var(--font-head);font-size:1.25rem;font-weight:700;color:var(--white);text-decoration:none}
+    .footer-col h4{color:var(--white);font-family:var(--font-body);font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:var(--space-4)}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:var(--space-3)}
+    .footer-col a{color:var(--neutral-400);transition:color .2s}
+    .footer-col a:hover{color:var(--white)}
+    .footer-bottom{border-top:1px solid var(--neutral-800);padding-block:var(--space-6);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-4);font-size:.8125rem}
+    .footer-legal-links{display:flex;gap:var(--space-4);list-style:none}
+
+    .whatsapp-float{position:fixed;bottom:var(--space-6);right:var(--space-6);width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;box-shadow:0 20px 25px rgba(0,0,0,.08),0 8px 10px rgba(0,0,0,.04);z-index:9999;transition:transform .2s}
+    .whatsapp-float:hover{transform:scale(1.1) translateY(-2px)}
+    .whatsapp-float svg{width:28px;height:28px}
+
+    .cookie-banner{position:fixed;bottom:0;left:0;right:0;background:var(--neutral-900);color:var(--neutral-300);padding:var(--space-4) var(--space-6);z-index:10001;display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;justify-content:center}
+    .cookie-banner p{font-size:.875rem;line-height:1.6;max-width:600px}
+    .cookie-banner a{color:var(--secondary)}
+    .cookie-actions{display:flex;gap:var(--space-2)}
+
+    :focus-visible{outline:3px solid var(--primary);outline-offset:2px}
+    ::selection{background:var(--primary);color:var(--white)}
+
+    @media (max-width:768px){
+      .main-nav{display:none}
+      .nav-toggle{display:flex}
+      .main-nav.open{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:var(--white);border-bottom:1px solid var(--neutral-200);padding:var(--space-6) var(--space-4);box-shadow:var(--shadow-lg)}
+      .main-nav.open ul{flex-direction:column;align-items:stretch;gap:var(--space-4)}
+      .main-nav.open a{display:block;padding:var(--space-2) 0;font-size:1rem}
+      .grid-2,.grid-3{grid-template-columns:1fr}
+      .section{padding-block:var(--space-10)}
+      .container{padding-inline:var(--space-4)}
+      .footer-grid{grid-template-columns:1fr}
+      .footer-bottom{flex-direction:column;text-align:center}
+      .cookie-banner{flex-direction:column;align-items:center;text-align:center;padding:var(--space-4)}
+      .cookie-actions{width:100%;justify-content:center}
+    }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"Blog juridique SARL Coco Avocats","url":"https://cocoa-avocats.ci/blog","description":"Actualités et conseils juridiques en droit des affaires, immobilier et contentieux commercial à Abidjan.","inLanguage":"fr"}</script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu</a>
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title">
+    <div>
+      <h2 id="cookie-title" style="margin:0 0 var(--space-2);font-size:1rem;font-weight:600;color:white;">Cookies</h2>
+      <p>Ce site utilise des cookies pour garantir le fonctionnement et mesurer l'audience. En continuant à naviguer, vous acceptez leur utilisation. <a href="/politique-confidentialite">En savoir plus</a></p>
+    </div>
+    <div class="cookie-actions">
+      <button onclick="document.getElementById('cookie-banner').style.display='none';localStorage.setItem('cookie-consent','accepted');" style="background:var(--secondary);color:var(--neutral-900);border:none;padding:.5rem 1rem;border-radius:999px;font-weight:600;cursor:pointer;font-size:.875rem;">Accepter</button>
+      <button onclick="document.getElementById('cookie-banner').style.display='none';localStorage.setItem('cookie-consent','rejected');" style="background:transparent;color:var(--neutral-300);border:1px solid var(--neutral-700);padding:.5rem 1rem;border-radius:999px;font-weight:500;cursor:pointer;font-size:.875rem;">Refuser</button>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo"><span class="logo-icon">CA</span><span>SARL Coco Avocats</span></a>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/a-propos">À propos</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/blog" class="active">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir la navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Blog juridique</span>
+          <h1>Actualités et conseils juridiques</h1>
+          <p> Analyses et avis d'experts en droit des affaires, immobilier et contentieux commercial à Abidjan.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="blog-card">
+            <div class="blog-card-img" aria-label="Illustration article — Création d'entreprise en Côte d'Ivoire">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><path d="M9 22V12h6v10"/></svg>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-category">Droit des affaires</span>
+              <h3><a href="/blog/creer-entreprise-cote-divoire">Créer une entreprise en Côte d'Ivoire : guide complet 2026</a></h3>
+              <p class="blog-excerpt">Le RCCM, le patente, l'identification fiscale… Tout ce qu'il faut savoir pour démarrer votre activité dans les meilleures conditions.</p>
+              <div class="blog-meta">
+                <div class="blog-author"><div class="blog-author-avatar">MC</div><span>Me COCOA</span></div>
+                <span class="blog-date">15 sept. 2026</span>
+              </div>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card-img" aria-label="Illustration article — Baux commerciaux Abidjan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><path d="M9 22V12h6v10"/></svg>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-category">Droit immobilier</span>
+              <h3><a href="/blog/baux-commerciaux-abidjan">Les baux commerciaux à Abidjan : ce que les entrepreneurs doivent savoir</a></h3>
+              <p class="blog-excerpt">Durée, renouvellement, garanties, loyers… Les clés pour négocier et protéger vos intérêts dans un bail commercial.</p>
+              <div class="blog-meta">
+                <div class="blog-author"><div class="blog-author-avatar">AK</div><span>Me KONE</span></div>
+                <span class="blog-date">2 sept. 2026</span>
+              </div>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card-img" aria-label="Illustration article — Recouvrement de créances">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-category">Contentieux</span>
+              <h3><a href="/blog/recouvrement-creances-abidjan">Recouvrement de créances à Abidjan : les démarches et délais</a></h3>
+              <p class="blog-excerpt">Du rappel amiable à l'injonction de paiement : comment récupérer ses créances en respectant les délais légaux ivoiriens.</p>
+              <div class="blog-meta">
+                <div class="blog-author"><div class="blog-author-avatar">JD</div><span>Me DIALLO</span></div>
+                <span class="blog-date">18 août 2026</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div style="text-align:center;margin-top:var(--space-10)">
+          <a href="/contact" class="btn" style="background:var(--primary);color:var(--white);padding:.75rem 1.5rem;border:none;border-radius:var(--radius-md);font-weight:600;font-size:.875rem;cursor:pointer;display:inline-flex;align-items:center;gap:var(--space-2);text-decoration:none;transition:background .2s">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H4z"/><path d="M4 16l3 3 7-7"/></svg>
+            Besoin d'un conseil ? Contactez-nous
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo"><span style="width:36px;height:36px;background:var(--secondary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--neutral-900);font-size:1rem;">CA</span><span>SARL Coco Avocats</span></a>
+          <p>Cabinet d'avocats au Barreau d'Abidjan-Cocody. Expertise juridique en droit des affaires, immobilier et contentieux commercial.</p>
+        </div>
+        <div class="footer-col"><h4>Nos services</h4><ul><li><a href="/services#affaires">Droit des affaires</a></li><li><a href="/services#immobilier">Droit immobilier</a></li><li><a href="/services#contentieux">Contentieux commercial</a></li><li><a href="/contact">Consultation</a></li></ul></div>
+        <div class="footer-col"><h4>Le cabinet</h4><ul><li><a href="/a-propos">À propos</a></li><li><a href="/a-propos#equipe">L'équipe</a></li><li><a href="/a-propos#engagements">Nos engagements</a></li><li><a href="/blog">Blog juridique</a></li></ul></div>
+        <div class="footer-col"><h4>Juridique</h4><ul><li><a href="/mentions-legales">Mentions légales</a></li><li><a href="/politique-confidentialite">Confidentialité</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SARL Coco Avocats — Tous droits réservés</p>
+        <ul class="footer-legal-links"><li><a href="/mentions-legales" style="color:var(--neutral-500);">Mentions légales</a></li><li><a href="/politique-confidentialite" style="color:var(--neutral-500);">Confidentialité</a></li></ul>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/2250700000000?text=Bonjour,%20je%20souhaite%20prendre%20rendez-vous." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contacter sur WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 7.87a2.39 2.39 0 0 1 2.57 1.22l.23.05a2.4 2.4 0 0 1 .36 2.71l-.89 4.02a.62.62 0 0 1-.78.32l-3.5-2.13a.71.71 0 0 1-.22-.41v-2.2a2.4 2.4 0 0 1 2.27-2.43c.98-.24 2.44.24 2.74 1.16l.56 1.57-3.93 2.35a.58.58 0 0 1-.7.07l-4.49-2.97a2.39 2.39 0 0 1-1.14-1.1c-.25-.35-.43-.75-.52-1.18a1.5 1.5 0 0 1 1.48-1.75c.68-.21 1.4-.07 1.89.33l3.35 3.35a2.4 2.4 0 0 1 1.16 2.74l-.05.24a.62.62 0 0 1-.4.57l.04.24a2.4 2.4 0 0 1-1.22 2.57l-.01.01a2.4 2.4 0 0 1-2.43 2.27l-.24-.05a2.39 2.39 0 0 1-2.71.36l-4.02-.89a.62.62 0 0 1-.32-.78l2.13-3.5a.71.71 0 0 1.41-.22l2.2 3.5a2.4 2.4 0 0 1 2.43 2.27c.24.98-.24 2.44-1.16 2.74l-1.57.56-2.35-3.93a.58.58 0 0 1-.07-.7l2.97-4.49c.35-.25.75-.43 1.18-.52a1.5 1.5 0 0 1 1.75 1.48c.21.68.07 1.4-.33 1.89l-3.35 3.35a2.4 2.4 0 0 1-2.74 1.16l-.24-.05a.62.62 0 0 1-.57-.4l-.24.04a2.4 2.4 0 0 1-2.57-1.22l-.01-.01a2.4 2.4 0 0 1-2.27-2.43c-.98-.24-2.44.24-2.74 1.16l-.56 1.57 3.93 2.35a.58.58 0 0 1-.07.7l-2.97 4.49a1.5 1.5 0 0 1-1.48 1.75c-.68.21-1.4.07-1.89-.33l-3.35-3.35a2.4 2.4 0 0 1-1.16-2.74l.05-.24a.62.62 0 0 1.4-.57l.24.04a2.4 2.4 0 0 1 2.57-1.22zM12 21.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9z"/></svg>
+  </a>
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      mainNav.classList.toggle('open', !expanded);
+    });
+    mainNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {mainNav.classList.remove('open');navToggle.setAttribute('aria-expanded','false');}));
+  </script>
+</body>
+</html>

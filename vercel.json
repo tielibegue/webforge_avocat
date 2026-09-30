@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "source": "code/src/*.html", "destination": "/www" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/www/$1" }
+  ]
+}
